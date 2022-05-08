@@ -30,9 +30,9 @@ function getDay(date, lang) {
 // Вид должен быть такой 12:02(часы и минуты), то есть если у вас одно число на одном из
 // компонентов, то добавляем 0 перед ним
 function formatTime(date) {
-  const hour = date.getHours() < 10 ? `0${date.getHours()}` : date.getHours();
+  const hours = date.getHours() < 10 ? `0${date.getHours()}` : date.getHours();
   const minutes = date.getMinutes() < 10 ? `0${date.getMinutes()}` : date.getMinutes();
-  return `${hour}:${minutes}`
+  return `${hours}:${minutes}`
 }
 
 /*
